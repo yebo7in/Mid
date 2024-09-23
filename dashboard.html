@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#" id="userInfoLink">User Info</a>
+        <a href="#" id="takingNotesLink">Taking Notes</a>
+        <a href="#" id="archivedNotesLink">Archived Notes</a>
+        <a href="#" id="deletedNotesLink">Deleted Notes</a>
+        <button id="logoutButton" class="logout-button">Logout</button>
+    </div>
+    <div id="content">
+        <div id="userInfoSection">
+            <h1>User Info</h1>
+            <div id="userInfoContent">
+                <!-- User Info content will be dynamically injected here -->
+            </div>
+        </div>
+
+        <div id="takingNotesSection">
+            <h1>Taking Notes</h1>
+            <button id="openNotePopup">Take Notes</button>
+            <h2>Saved Notes</h2>
+            <label for="priorityFilter">Filter by Priority:</label>
+            <select id="priorityFilter">
+                <option value="">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <ul id="notesList"></ul>
+        </div>
+
+        <div id="archivedNotesSection">
+            <h1>Archived Notes</h1>
+            <ul id="archivedNotesList">
+                <!-- Archived notes will be dynamically injected here -->
+            </ul>
+        </div>
+
+        <div id="deletedNotesSection">
+            <h1>Deleted Notes</h1>
+            <ul id="deletedNotesList">
+                <!-- Deleted notes will be dynamically injected here -->
+            </ul>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
